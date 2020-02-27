@@ -24,7 +24,7 @@ async function run() {
       await exec.exec("pip3 install setuptools wheel");
 
       // fix "No module named 'win32file'"
-      if (process.platform == "windows") {
+      if (process.platform == "win32") {
             await exec.exec("pip3 install pywin32");
       }
       
